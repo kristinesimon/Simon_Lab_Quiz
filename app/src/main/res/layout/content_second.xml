@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.kristine.simon_lab_quiz.SecondActivity"
+    tools:showIn="@layout/activity_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <TableLayout
+        android:id="@id/TableView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/logiin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Output"
+            android:textColor="#fff"
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="50px"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/btn_loadSharedPreferences"
+            android:text="Load"
+            android:onClick="LoadSharedPreferences"
+            android:textColor="#fff"
+            android:background="@drawable/border"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableLayout>
+
+    <TextView
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:id="@+id/display"
+        android:layout_below="@id/TableView"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:paddingTop="15dp"
+        android:textColorHint="#fff"
+        android:background="#00000000"
+        android:letterSpacing="0.1"
+        android:textColor="#fff"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/display"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Clear"
+            android:onClick="Clear"
+            android:textColor="#fff"
+            android:background="@drawable/border"
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="back"
+            android:onClick="Back"
+            android:textColor="#fff"
+            android:background="@drawable/border"
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
